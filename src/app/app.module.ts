@@ -8,6 +8,12 @@ import { Test2Component } from './components/test-p/test2/test2.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { HomeComponent } from './components/home/home.component';
+import { BlushComponent } from './components/products/blush/blush.component';
+import { BronzerComponent } from './components/products/bronzer/bronzer.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { SpinnerComponent } from './components/spinner/spinner.component';
+
 
 
 @NgModule({
@@ -15,13 +21,18 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     AppComponent,
     TestComponent,
     Test2Component,
-    NavBarComponent
+    NavBarComponent,
+    HomeComponent,
+    BlushComponent,
+    BronzerComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
