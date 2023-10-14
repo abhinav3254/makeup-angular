@@ -7,13 +7,15 @@
     max-height: 20rem;
     border-radius: 0.2rem;
     padding: 0.5rem;
-    box-shadow: 2.5px 2.5px 2.5px rgba(0, 0, 0, 0.5);
+    box-shadow: 2.5px 2.5px 2.5px rgba(58, 175, 169, 0.8);
     padding: 0.5rem;
+    background-color: #FA991C;
 }
 
 .item:hover {
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 10px rgba(58, 175, 169, 0.5);
     cursor: pointer;
+    opacity: 0.8;
 }
 
 .img {

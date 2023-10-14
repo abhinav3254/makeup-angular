@@ -1,1 +1,28 @@
-<p>blush works!</p>
+<app-spinner *ngIf="makeupData.length === 0"></app-spinner>
+
+<div class="container text-center">
+    <div class="row">
+        <div class="col" *ngFor="let item of makeupData">
+            <div class="item">
+                <img class="img" src="{{item.image_link}}" alt="" (error)="handleImageError($event)">
+                <p class="brand">{{item.brand |uppercase}}</p>
+                <p class="name">
+                    {{ (item.name.length > 10) ? (item.name | slice:0:10) + '...' : item.name |uppercase }}
+                </p>
+                <p>{{item.price_sign}} {{item.price}}</p>
+
+
+                <div class="color">
+                    <ng-container *ngFor="let color of item.product_colors; let i = index">
+                        <div class="color-value" [ngStyle]="{'background-color': color.hex_value}" *ngIf="i < 3">
+                        </div>
+                    </ng-container>
+                    <div class="color-value" *ngIf="item.product_colors.length > 3">
+                        +{{ item.product_colors.length-3 }}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

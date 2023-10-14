@@ -18,14 +18,9 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  handleImageError1(img: any) {
-    img.src = 'https://thumbs.dreamstime.com/b/funny-face-baby-27701492.jpg';
-    img.alt = 'Image failed to load';
-  }
-
   handleImageError(event: Event): void {
     const imgElement = event.target as HTMLImageElement;
-    imgElement.src = 'https://thumbs.dreamstime.com/b/funny-face-baby-27701492.jpg';
+    imgElement.src = 'https://img.freepik.com/free-psd/3d-rendering-ui-icon_23-2149182289.jpg?size=626&ext=jpg&ga=GA1.1.1038739080.1695141736&semt=sph';
     imgElement.alt = 'Image failed to load';
   }
 

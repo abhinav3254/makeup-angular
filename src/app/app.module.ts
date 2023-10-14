@@ -13,6 +13,7 @@ import { BlushComponent } from './components/products/blush/blush.component';
 import { BronzerComponent } from './components/products/bronzer/bronzer.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { FotterComponent } from './components/fotter/fotter.component';
 
 
 
@@ -26,6 +27,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     BlushComponent,
     BronzerComponent,
     SpinnerComponent,
+    FotterComponent,
   ],
   imports: [
     BrowserModule,
